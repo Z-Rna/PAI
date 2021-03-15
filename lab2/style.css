@@ -1,0 +1,138 @@
+html, body, p, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 16px;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background: lightgray;
+    border-top: 2px black solid;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+h1 {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+nav {
+    flex-grow: 2;
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    width: 75px;
+}
+
+#logo {
+    background: url(logo.png);
+    width: 75px;
+    height: 75px;
+}
+
+article {
+    margin: 15px;
+    width: 100%;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+}
+
+h5 {
+    height: 50px;
+    width: 50%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    background-color: lightgray;
+    border-left: 2px black solid;
+    border-bottom: 2px black solid;
+}
+
+article p {
+    text-align: justify;
+    padding: 15px;
+}
+
+p[id = "autor"] {
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1 0 auto;
+}
+
+nav img {
+    display: none;
+    margin-top: 15px;
+}
+
+@media all and (max-width: 900px) {
+    main {
+        flex-wrap: wrap;
+    }
+
+    #tytuł {
+        display: none;
+    }
+    
+    article {
+        margin-bottom: 20px;
+    }
+
+    #logo {
+        justify-content: flex-start;
+    }
+
+    nav a {
+        display: none;
+    }
+
+
+    #burger {
+        display: block;
+        justify-content: flex-end;
+    }
+}
+

@@ -1,0 +1,70 @@
+* { 
+	font-family: Tahoma 
+}
+
+body { 
+	margin: 5em 10em 5em 10em 
+}
+
+p { 
+	text-align: justify 
+}
+
+
+li { 
+	list-style-type: square;
+}
+
+span#nazwa {
+	font-weight: bold;
+}
+
+span#cena { 
+	color: red;
+	font-weight: bold;
+}
+
+p.wstęp{
+	font-style: italic;
+}
+
+td img{
+	border-style: solid;
+	border-color: blue;
+}
+
+
+td img:hover{
+	border-style: solid;
+	border-color: red;
+}
+
+h1 + h2{
+	letter-spacing: 5px;
+}
+
+*[colspan = "2"]{
+	font-size: small;
+}
+
+p + p { 
+	color: grey;
+}
+
+body{
+	background-image: url(books.jpg); 
+	background-repeat: repeat-y
+}
+
+/* final color: green */
+h1 { 
+	color: blue; 
+}
+h1 { 
+	color: green; 
+}
+
+/*osatecnzy kolor*/
+h1 {
+	color: red;
+}
