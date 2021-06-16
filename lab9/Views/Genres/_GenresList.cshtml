@@ -1,0 +1,38 @@
+﻿
+@model IEnumerable<lab9.Models.Genre>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table" id=" = "genres">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>z
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Ajax.ActionLink("Delete", "Delete", new { id = item.Id }, new AjaxOptions()
+                 {
+                 HttpMethod = "Delete",
+                 Confirm = "Are you sure you want to delete this song?",
+                 UpdateTargetId = "genres"
+                 })
+            </td>
+        </tr>
+    }
+
+</table>
